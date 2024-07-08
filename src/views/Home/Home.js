@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import PlantCard from "../../compoenents/PlantCard/PlantCard"
 import axios from "axios"
 import toast, {Toaster} from "react-hot-toast"
+import ImgAdd from "./add.png"
+import { Link } from "react-router-dom"
 
 function Home() {
   const [plants, setPlants] = useState([])
@@ -47,7 +49,10 @@ function Home() {
         })
       }
       <Toaster />
-    </div>
+      <Link to="/add">
+        <img src={ImgAdd} className="btn-add"/>
+      </Link>
+    </div> 
   )
 }
 
