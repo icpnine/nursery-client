@@ -45,7 +45,9 @@ function Home() {
               category={category} 
               price={price} 
               image={image} 
-              description={description}/>)
+              description={description}
+              loadPlants={loadPlants} />
+            )
         })
       }
       <Toaster />
